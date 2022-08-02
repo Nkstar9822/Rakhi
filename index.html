@@ -148,7 +148,7 @@
   let userName=document.getElementById('userName');
   let btn1=document.getElementById('btn-1');
   let showNAme=document.getElementById('showName');
-  var sname=document.querySelector("#userName").value;
+  var Name=document.querySelector("#userName");
 
   function outputName(){
     showName.innerHTML=userName.value;
@@ -158,7 +158,7 @@
 
   btn1.addEventListener("click", outputName);
 function share(){
-     window.open( "whatsapp://send?text=" + sname +" ने *रक्षा बंधन का विशेष संदेश* भेजा है , देखने के लिए *नीचे जादुई Link* पर क्लिक करें%0A👇👇"+"https://nkstar9822.github.io/Rakshabandhan.github.io/"); 
+     window.open( "whatsapp://send?text=" + Name.value +" ने *रक्षा बंधन का विशेष संदेश* भेजा है , देखने के लिए *नीचे जादुई Link* पर क्लिक करें%0A👇👇"+"https://nkstar9822.github.io/Rakshabandhan.github.io/"); 
   }
 </script>
 
