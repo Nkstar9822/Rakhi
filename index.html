@@ -75,7 +75,7 @@
 
 
           <div class="time-box border-img">
-          	 <p id="Infoshashikant" style="margin:0px"></p>
+          	 <p id="dayleft" style="margin:0px"></p>
           </div>
 
           <div class="name-box">
@@ -275,14 +275,14 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="Infoshashikant"
-  document.getElementById("Infoshashikant").innerHTML = days + "<i> Days,</i> " + hours + " <i>Hrs,</i> "
+  // Display the result in the element with id="dayleft"
+  document.getElementById("dayleft").innerHTML = days + "<i> Days,</i> " + hours + " <i>Hrs,</i> "
   + minutes + "<i> Min,</i> " + seconds + "<i> Sec</i> ";
 
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("Infoshashikant").innerHTML = ".";
+    document.getElementById("dayleft").innerHTML = ".";
   }
 }, 1000);
 </script>        
@@ -295,95 +295,5 @@ var x = setInterval(function() {
 
   gtag('config', 'UA-191698403-1');
 </script>
-
-
-
-
-
-
-     <!-- <div class="fotter-main">
-         	<input type="text" id="userName" name="" placeholder="😊 यहाँ अपना नाम लिखें">
-         	<button id="btn-1">👉देखें</button>
-         </div>
-
-       <div id="shareWA" onclick="share()">
-         <img src="WA.png" >Share on Watsapp<img src="WA.png">
-       </div>  
-
-   </div>
-
-   
-
-<script>
-var jqs = function(sParam) {
-        var sPageURL = window.location.search.substring(1);
-        var sURLVariables = sPageURL.split("&");
-        for (var i = 0; i < sURLVariables.length; i++) {
-            var sParameterName = sURLVariables[i].split("=");
-            if (sParameterName[0] === sParam) {
-              return sParameterName[1];
-            }
-          }
-      };
-    window.jqs = jqs;
-    var name = decodeURI(jqs("bl"));
-    if (typeof jqs("bl") === "undefined") {
-      name = "";
-    }
-
-  let userName=document.getElementById('userName');
-  let btn1=document.getElementById('btn-1');
-  let showNAme=document.getElementById('showName');
-  var Name=document.getElementById("userName");
-  
-
-  function outputName(){
-    showName.innerHTML=userName.value;
-    document.querySelector(".fotter-main").style.display = "none";
-    document.querySelector("#shareWA").style.display = "block";
-  }
-
-  btn1.addEventListener("click", outputName);
-
-  function share(){
-      window.open( "whatsapp://send?text=" +"*"+Name.value+"*"+" ने *रक्षा बंधन का विशेष संदेश* भेजा है , देखने के लिए *नीचे जादुई Link* पर क्लिक करें%0A👇👇"+(window.location.href.split("?")[0] + "?bl=" + Name.value).replace("#", "").replace(/ /g, "-")); 
-
-  }
-
-</script>
-
-
-
-
- <script>
-// Set the date we're counting down to
-var countDownDate = new Date("August 11, 2022 00:00:00").getTime();
-
-// Update the count down every 01 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="Infoshashikant"
-  document.getElementById("Infoshashikant").innerHTML = days + "<i> Days,</i> " + hours + " <i>Hrs,</i> "
-  + minutes + "<i> Min,</i> " + seconds + "<i> Sec</i> ";
-
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("Infoshashikant").innerHTML = ".";
-  }
-}, 1000);
-</script>     -->
 </body>
 </html>
