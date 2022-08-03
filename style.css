@@ -164,7 +164,7 @@ body{
 }
 input[type="text"]::placeholder{
 	text-align: center;
-    font-size: 10px;
+    font-size: 12px;
 }
 .button1{
 	width: 28%;
